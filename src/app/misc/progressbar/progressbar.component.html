@@ -1,0 +1,10 @@
+<br><br>
+<h3>Progress Bar</h3>
+<p-progressBar mode="indeterminate" [style]="{ height: '6px' }" />
+<br><br>
+<h6>Template</h6>
+<p-progressBar [value]="50">
+    <ng-template pTemplate="content" let-value>
+        <span>{{value}}/100</span>
+    </ng-template>
+</p-progressBar>

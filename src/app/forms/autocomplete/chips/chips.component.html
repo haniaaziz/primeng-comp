@@ -1,0 +1,7 @@
+<h2>Chips Component</h2>
+<h5>Template</h5>
+<p-chips [(ngModel)]="values"   [max]="max">
+    <ng-template let-item pTemplate="item">
+        {{ item }} - (active) <i class="pi pi-user ml-2"></i>
+    </ng-template>
+</p-chips>

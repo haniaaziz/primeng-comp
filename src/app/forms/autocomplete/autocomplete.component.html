@@ -1,0 +1,15 @@
+<h2>Autocomplete Component</h2>
+<h5>Template</h5>
+<p-autoComplete [(ngModel)]="selectedCountryAdvanced" [suggestions]="filteredCountries"
+    (completeMethod)="filterCountry($event)" field="name"   >
+    <ng-template let-country pTemplate="item">
+        <div class="flex align-items-center gap-2">
+            <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
+                [class]="'flag flag-' + country.code.toLowerCase()" style="width: 20px" />
+            <div>{{ country.name }}</div>
+        </div>
+    </ng-template>
+</p-autoComplete>
+<br>
+<!-- multiple="true" -->
+<!-- [dropdown]="true" -->

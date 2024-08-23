@@ -1,0 +1,12 @@
+<br><br>
+<h3>BlockUI Component</h3>
+<p-button label="Block" (onClick)="blockedPanel = true" />
+<p-button label="Unblock" (onClick)="blockedPanel = false" />
+<p-blockUI [target]="pnl" [blocked]="blockedPanel">
+    <i class="pi pi-lock" style="font-size: 3rem"></i>
+</p-blockUI>
+<p-panel #pnl header="Header" styleClass="mt-4">
+    <p class="m-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+</p-panel>

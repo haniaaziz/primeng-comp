@@ -1,0 +1,15 @@
+<h3>InputOTP Component</h3>
+<p-inputOtp [(ngModel)]="value" />
+<!-- [integerOnly]="true" -->
+<!-- [mask]="true" -->
+ <br>
+ <h5>Template</h5>
+<div class="flex justify-content-center">
+    <p-inputOtp [(ngModel)]="value">
+        <ng-template pTemplate="input" let-token let-events="events">
+            <input pInputText class="custom-otp-input" (input)="events.input($event)" (keydown)="events.keydown($event)"
+                type="text" [attr.value]="token" [maxLength]="1" />
+        </ng-template>
+    </p-inputOtp>
+</div>
+<br>

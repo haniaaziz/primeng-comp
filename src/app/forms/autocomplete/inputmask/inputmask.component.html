@@ -1,0 +1,21 @@
+<br>
+<h3>Input Mask</h3>
+<div class="row">
+    <div class="col-4">
+        <span class="font-bold block mb-2">SSN</span><br>
+        <p-inputMask mask="999-99-9999" [(ngModel)]="value1" placeholder="999-99-9999"  />
+    </div>
+    <div class="col-4 ">
+        <span class="font-bold block mb-2">Phone</span><br>
+        <p-inputMask mask="(999) 999-9999" [(ngModel)]="value2" placeholder="(999) 999-9999"   />
+    </div>
+    <div class="col-4 ">
+        <span class="font-bold block mb-2">Serial Number</span><br>
+        <p-inputMask mask="a*-999-a999" [(ngModel)]="value3" placeholder="a*-999-a999"  />
+    </div>
+</div>
+<!-- slotChar="mm/dd/yyyy" -->
+ <br>
+ <h3>Input Switch</h3>
+<p-inputSwitch [(ngModel)]="checked" />
+

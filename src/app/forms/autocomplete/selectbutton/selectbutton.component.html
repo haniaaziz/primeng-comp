@@ -1,0 +1,20 @@
+<h3>Select Button Component</h3>
+<h5>Template</h5>
+<p-selectButton [options]="justifyOptions" [(ngModel)]="value" optionLabel="icon" [multiple]="true">
+    <ng-template let-item pTemplate>
+        <i [class]="item.icon"></i>
+    </ng-template>
+</p-selectButton>
+<br>
+<h3>Toggle Button</h3>
+<p-toggleButton 
+    [(ngModel)]="checked" 
+    onLabel="Locked" 
+    offLabel="Unlocked" 
+    onIcon="pi pi-check" 
+    offIcon="pi pi-times" 
+    onIcon="pi pi-lock" 
+    offIcon="pi pi-lock-open" 
+    styleClass="w-9rem"
+    ariaLabel="Do you confirm" />
+    <br>

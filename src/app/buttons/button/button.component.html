@@ -1,0 +1,19 @@
+<h3>Links</h3>
+<p-button label="Link" [link]="true" />
+<a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="p-button font-bold">
+    External
+</a>
+<a routerLink="button" class="p-button font-bold">
+    Router
+</a>
+
+<h5>Icons</h5>
+<p-button icon="pi pi-check" class="mr-2" severity="help"/>
+<p-button label="Submit" icon="pi pi-check" class="mr-2" [outlined]="true" severity="warning"/>
+<p-button label="Submit" icon="pi pi-check" iconPos="right" [text]="true" />
+<br>
+<h3>Split Buttons</h3>
+<h5>Nested</h5>
+<p-splitButton label="Save" (onClick)="save('info')" [model]="items" text 
+    severity="help"/>
+    <br>

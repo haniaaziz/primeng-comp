@@ -1,0 +1,11 @@
+<h2>Checkbox</h2>
+<h5>Dynamic</h5>
+<div class="flex justify-content-center">
+    <div class="flex flex-column gap-2">
+        <div *ngFor="let category of categories" class="field-checkbox">
+            <p-checkbox [(ngModel)]="selectedCategories" [label]="category.name" name="group" [value]="category" />
+        </div>
+    </div>
+</div>
+<h3>Tristate Checkbox</h3>
+<p-triStateCheckbox [(ngModel)]="value" variant="filled" inputId="tricheckbox" />
